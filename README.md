@@ -49,13 +49,14 @@ references/grammar-en.md          영어판
 references/character-bible.md     캐릭터 상수표, 캐릭터시트 훼손 사양
 references/lighting-materials.md  재질 상대비 설계, 장면 유형별 배합표
 references/scene-space.md         배경 구역 분할, 컷별 취경, 발광 배경 처리
-chatgpt/                          ChatGPT Custom GPT 이식본 (지시문 + Knowledge 5장)
+chatgpt/INSTRUCTIONS.md           ChatGPT Custom GPT용 지시문 (출력 계약·게이트)
+chatgpt/SETUP.md                  Custom GPT 설치 절차
 ```
 
 ## ChatGPT에서 쓰기
 
 `chatgpt/SETUP.md` 참고. `INSTRUCTIONS.md` 를 Custom GPT의 Instructions 란에 붙이고
-`chatgpt/knowledge/` 의 md 5장을 Knowledge로 올리면 된다.
+`references/` 의 md 5장을 그대로 Knowledge로 올리면 된다. 사본은 두지 않는다.
 ChatGPT는 출력 계약을 잘 이탈해서 리터럴 금지 목록과 출력 직전 게이트를 따로 넣어뒀다.
 
 ## 출력 형태

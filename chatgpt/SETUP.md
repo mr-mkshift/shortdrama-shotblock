@@ -1,15 +1,18 @@
 # ChatGPT 설치 — 숏드라마 분경조 컴파일러
 
-파일 5개로 구성됩니다. 지시문 1장 + Knowledge 5장.
+지시문 1장 + Knowledge 5장으로 구성된다. Knowledge는 `references/` 원본을 그대로 올린다.
 
 ```
-INSTRUCTIONS.md            → GPT의 Instructions 란에 전문 붙여넣기 (3,394자 / 한도 8,000자)
-knowledge/01-grammar-zh.md → Knowledge 업로드
-knowledge/02-grammar-en.md → Knowledge 업로드
-knowledge/03-character-bible.md
-knowledge/04-lighting-materials.md
-knowledge/05-scene-space.md
+chatgpt/INSTRUCTIONS.md  → GPT의 Instructions 란에 전문 붙여넣기 (3,394자 / 한도 8,000자)
+references/grammar-zh.md → Knowledge 업로드
+references/grammar-en.md
+references/character-bible.md
+references/lighting-materials.md
+references/scene-space.md
 ```
+
+Knowledge로 올릴 5장은 `references/` 의 원본을 그대로 쓴다. 사본을 따로 두지 않는다 —
+두 벌이 되면 한쪽만 고쳐져서 반드시 어긋난다.
 
 ---
 
@@ -22,7 +25,7 @@ Knowledge 파일도 앱에서 그대로 물립니다.
 2. **Name** — `분경조 컴파일러`
 3. **Description** — `한국어 컷 정보를 중국어/영어 분경조 프롬프트로 컴파일한다.`
 4. **Instructions** — `INSTRUCTIONS.md` 전문을 그대로 붙여넣기
-5. **Knowledge** — `knowledge/` 안의 md 5개 업로드
+5. **Knowledge** — `references/` 의 md 5개 업로드
 6. **Capabilities** — **전부 끈다**
    - Web Search ✗ · Canvas ✗ · DALL·E ✗ · Code Interpreter ✗
    - 이게 켜져 있으면 컴파일 대신 검색하거나 캔버스를 열어 출력 계약이 깨집니다
@@ -47,7 +50,7 @@ Knowledge 파일도 앱에서 그대로 물립니다.
 
 1. 앱 → **프로젝트** → 새 프로젝트
 2. **지시문** — `INSTRUCTIONS.md` 전문 붙여넣기
-3. **파일** — `knowledge/` md 5개 첨부
+3. **파일** — `references/` 의 md 5개 첨부
 4. 프로젝트 안에서만 대화한다 (일반 대화창에서 부르면 지시문이 안 걸린다)
 
 느슨해졌다 싶으면 첫 메시지 맨 앞에 이 한 줄을 붙입니다.

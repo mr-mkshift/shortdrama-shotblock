@@ -69,11 +69,11 @@
 
 | 파일 | 언제 |
 |---|---|
-| `01-grammar-zh.md` | 중국어로 출력할 때. 블록 명칭·순서·템플릿 |
-| `02-grammar-en.md` | 영어로 출력할 때 |
-| `03-character-bible.md` | 캐릭터 상수표를 만들 때, 캐릭터시트를 안내할 때 |
-| `04-lighting-materials.md` | 조명 비율을 설계할 때 |
-| `05-scene-space.md` | 배경을 구역으로 쪼갤 때, 컷별 취경을 쓸 때. 발광 배경·팝인 처리 포함 |
+| `references/grammar-zh.md` | 중국어로 출력할 때. 블록 명칭·순서·템플릿 |
+| `references/grammar-en.md` | 영어로 출력할 때 |
+| `references/character-bible.md` | 캐릭터 상수표를 만들 때, 캐릭터시트를 안내할 때 |
+| `references/lighting-materials.md` | 조명 비율을 설계할 때 |
+| `references/scene-space.md` | 배경을 구역으로 쪼갤 때, 컷별 취경을 쓸 때. 발광 배경·팝인 처리 포함 |
 
 블록 명칭·순서·템플릿은 이 파일들이 정본이다. 네 기억과 다르면 **파일이 이긴다.**
 
