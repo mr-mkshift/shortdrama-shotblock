@@ -34,7 +34,7 @@ video-generation prompts, built for producing episodic short drama at volume.
 ## 설치
 
 ```bash
-git clone https://github.com/<user>/shortdrama-shotblock.git ~/.claude/skills/shortdrama-shotblock
+git clone https://github.com/mr-mkshift/shortdrama-shotblock.git ~/.claude/skills/shortdrama-shotblock
 ```
 
 Claude Code를 재시작하면 스킬 목록에 잡힌다. 숏드라마 컷·분경조·캐릭터 바이블·
