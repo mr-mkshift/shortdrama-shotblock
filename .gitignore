@@ -1,0 +1,10 @@
+# 백업·임시
+*.bak
+*.bak-*
+*~
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
