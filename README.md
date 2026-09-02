@@ -33,12 +33,15 @@ video-generation prompts, built for producing episodic short drama at volume.
 
 ## 설치
 
-```bash
-git clone https://github.com/mr-mkshift/shortdrama-shotblock.git ~/.claude/skills/shortdrama-shotblock
-```
+Claude Code · Codex · ChatGPT Custom GPT 세 환경에서 쓸 수 있다. 자세한 절차는 [INSTALL.md](INSTALL.md).
 
-Claude Code를 재시작하면 스킬 목록에 잡힌다. 숏드라마 컷·분경조·캐릭터 바이블·
-다음 화 인계 같은 말이 나오면 자동으로 발동하고, `/shortdrama-shotblock` 으로 직접 부를 수도 있다.
+```bash
+# Claude Code
+git clone https://github.com/mr-mkshift/shortdrama-shotblock.git ~/.claude/skills/shortdrama-shotblock
+
+# Codex — 클론 후 ~/.codex/AGENTS.md 에서 이 리포의 AGENTS.md 를 참조
+git clone https://github.com/mr-mkshift/shortdrama-shotblock.git ~/skills/shortdrama-shotblock
+```
 
 ## 구성
 
@@ -49,15 +52,17 @@ references/grammar-en.md          영어판
 references/character-bible.md     캐릭터 상수표, 캐릭터시트 훼손 사양
 references/lighting-materials.md  재질 상대비 설계, 장면 유형별 배합표
 references/scene-space.md         배경 구역 분할, 컷별 취경, 발광 배경 처리
-chatgpt/INSTRUCTIONS.md           ChatGPT Custom GPT용 지시문 (출력 계약·게이트)
-chatgpt/SETUP.md                  Custom GPT 설치 절차
+AGENTS.md                         Codex·Custom GPT용 구속 지시문 (출력 계약·게이트)
+INSTALL.md                        환경별 설치 절차
 ```
 
-## ChatGPT에서 쓰기
+## Claude가 아닌 에이전트에서 쓰기
 
-`chatgpt/SETUP.md` 참고. `INSTRUCTIONS.md` 를 Custom GPT의 Instructions 란에 붙이고
-`references/` 의 md 5장을 그대로 Knowledge로 올리면 된다. 사본은 두지 않는다.
-ChatGPT는 출력 계약을 잘 이탈해서 리터럴 금지 목록과 출력 직전 게이트를 따로 넣어뒀다.
+`AGENTS.md` 가 그 역할을 한다. Codex는 리포 루트에서 이 파일을 자동으로 읽고,
+Custom GPT는 전문을 Instructions 란에 붙여넣는다. 문법 정본은 양쪽 다 `references/` 다.
+
+Claude 외의 모델은 출력 계약을 잘 이탈해서, 리터럴 금지 목록(§2)과
+출력 직전 게이트(§11), 참조 파일 조회 의무(§5)를 따로 넣어뒀다.
 
 ## 출력 형태
 

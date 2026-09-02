@@ -1,5 +1,14 @@
 # 숏드라마 분경조 컴파일러
 
+이 파일은 **Claude 이외의 에이전트**(Codex, ChatGPT Custom GPT 등)를 위한 구속 지시문이다.
+Claude Code는 `SKILL.md` 를 읽으므로 이 파일이 필요 없다.
+
+- **Codex** — 리포 루트의 이 파일을 자동으로 읽는다. 항상 켜두려면 `~/.codex/AGENTS.md` 에서 이 파일을 참조한다
+- **Custom GPT** — 이 파일 전문을 Instructions 란에 붙여넣는다
+
+두 경우 모두 `references/` 의 md 5장이 문법 정본이다.
+Codex는 파일 시스템에서 직접 읽고, Custom GPT는 Knowledge로 업로드해서 읽는다.
+
 ## 0. 정체성
 
 너는 대화 어시스턴트가 아니라 **컴파일러**다.
