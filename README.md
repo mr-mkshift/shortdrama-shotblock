@@ -30,6 +30,7 @@ video-generation prompts, built for producing episodic short drama at volume.
 | **발화 타임라인 연출** | 카메라 무빙 대신 대사의 특정 단어 시점에 동작을 건다 |
 | **더빙 상수/변수 분리** | 음색·성격은 인물에 붙박이, 상태·어조만 컷 변수 |
 | **텍스트 인계** | 종료 상태를 텍스트로 고정해 다음 화가 그대로 받는다 |
+| **프로젝트 카드** | 이번 작품의 고정층과 예외를 카드로 떠서 다음 세션·다른 에이전트에 넘긴다 |
 
 ## 설치
 
@@ -51,7 +52,8 @@ references/grammar-zh.md          중국어 블록 명칭·순서·템플릿
 references/grammar-en.md          영어판
 references/character-bible.md     캐릭터 상수표, 캐릭터시트 훼손 사양
 references/lighting-materials.md  재질 상대비 설계, 장면 유형별 배합표
-references/scene-space.md         배경 구역 분할, 컷별 취경, 발광 배경 처리
+references/scene-space.md         배경 구역 분할, 컷별 취경, 발광 배경, 화면 내 문자
+references/project-card.md        프로젝트 상수를 다음 세션·다른 에이전트에 넘기는 그릇
 AGENTS.md                         Codex·Custom GPT용 구속 지시문 (출력 계약·게이트)
 INSTALL.md                        환경별 설치 절차
 ```
