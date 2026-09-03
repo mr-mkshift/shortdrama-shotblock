@@ -54,6 +54,7 @@ references/character-bible.md     캐릭터 상수표, 캐릭터시트 훼손 �
 references/lighting-materials.md  재질 상대비 설계, 장면 유형별 배합표
 references/scene-space.md         배경 구역 분할, 컷별 취경, 발광 배경, 화면 내 문자
 references/project-card.md        프로젝트 상수를 다음 세션·다른 에이전트에 넘기는 그릇
+references/targets.md             타깃 툴의 최소 길이·종료 방식·참조 이미지 능력
 AGENTS.md                         Codex·Custom GPT용 구속 지시문 (출력 계약·게이트)
 INSTALL.md                        환경별 설치 절차
 ```
