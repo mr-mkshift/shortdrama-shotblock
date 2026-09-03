@@ -42,12 +42,21 @@ git clone https://github.com/mr-mkshift/shortdrama-shotblock.git ~/skills/shortd
 ```markdown
 ## 숏드라마 분경조 컴파일
 
-숏드라마 컷 블록·분경조·스토리보드 프롬프트 작업이 나오면
-`~/skills/shortdrama-shotblock/AGENTS.md` 를 읽고 그 지시를 그대로 따른다.
-문법 정본은 같은 폴더의 `references/` 안에 있다.
+숏드라마·시리즈물의 컷 블록, 분경조, 스토리보드 프롬프트, 캐릭터 바이블,
+다음 화 인계가 언급되면 아래를 **답을 쓰기 전에** 수행한다.
+
+1. `~/skills/shortdrama-shotblock/AGENTS.md` 를 읽는다. 참고가 아니라 실행 지시다.
+2. 그 문서의 "시작 전" 절차를 그대로 따른다 — 타깃 언어를 정하고
+   `~/skills/shortdrama-shotblock/references/` 의 해당 문법 파일을 **실제로 연다.**
+3. 문법 파일을 열지 않은 채 분경조를 출력하지 않는다.
+
+출력 형식은 그 문서의 출력 계약을 따른다. 자기 형식으로 재구성하지 않는다.
 ```
 
 경로는 실제 클론 위치에 맞춘다.
+
+"읽고 따른다" 한 줄만 적으면 Codex가 파일을 안 열고 기억으로 답한다.
+**읽는 것을 개별 단계로 쪼개고, 안 읽으면 실패라고 명시**해야 실제로 연다.
 
 ### 3. 프로젝트 단위로만 쓸 때
 
