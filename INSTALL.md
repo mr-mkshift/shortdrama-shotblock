@@ -1,6 +1,6 @@
 # 설치
 
-세 가지 환경에 설치할 수 있다. 문법 정본은 어느 쪽이든 `references/` 의 md 5장이다.
+세 가지 환경에 설치할 수 있다. 문법 정본은 어느 쪽이든 `references/` 의 md 6장이다.
 
 | 환경 | 읽는 파일 | 설치 방식 |
 |---|---|---|
@@ -73,12 +73,12 @@ git clone https://github.com/mr-mkshift/shortdrama-shotblock.git ~/skills/shortd
    (Create 탭의 대화형 생성은 쓰지 않는다)
 2. **Name** — `분경조 컴파일러`
 3. **Description** — `한국어 컷 정보를 중국어/영어 분경조 프롬프트로 컴파일한다.`
-4. **Instructions** — `AGENTS.md` 전문을 붙여넣기 (약 3,800자 / 한도 8,000자)
-5. **Knowledge** — `references/` 의 md 5장 업로드
+4. **Instructions** — `AGENTS.md` 전문을 붙여넣기 (약 5,600자 / 한도 8,000자)
+5. **Knowledge** — `references/` 의 md 6장 업로드
 
    ```
    grammar-zh.md  grammar-en.md  character-bible.md
-   lighting-materials.md  scene-space.md
+   lighting-materials.md  scene-space.md  project-card.md
    ```
 
 6. **Capabilities** — **전부 끈다**
@@ -102,7 +102,7 @@ git clone https://github.com/mr-mkshift/shortdrama-shotblock.git ~/skills/shortd
 
 1. 앱 → **프로젝트** → 새 프로젝트
 2. **지시문** — `AGENTS.md` 전문 붙여넣기
-3. **파일** — `references/` 의 md 5장 첨부
+3. **파일** — `references/` 의 md 6장 첨부
 4. 프로젝트 안에서만 대화한다 (일반 대화창에서는 지시문이 안 걸린다)
 
 느슨해졌다 싶으면 첫 메시지 맨 앞에 붙인다.
@@ -134,7 +134,7 @@ Codex에서 실패하면 `AGENTS.md` 가 실제로 로드됐는지 확인한다.
 | 항목 | Claude Code | Codex · Custom GPT |
 |---|---|---|
 | 발동 | `SKILL.md` description 매칭으로 자동 | 항상 켜짐 |
-| 참조 파일 | 필요할 때 읽음 | `AGENTS.md` §5에서 조회를 **의무화**해 기억 답변을 막음 |
-| 출력 이탈 | 드묾 | 잦음 → §2 리터럴 금지 목록, §11 출력 직전 게이트 |
+| 참조 파일 | 필요할 때 읽음 | 맨 위 "시작 전" 블록에서 **여는 것을 개별 단계로** 못 박아 기억 답변을 막음 |
+| 출력 이탈 | 드묾 | 잦음 → §2 리터럴 금지, §11 게이트, §13 흔한 이탈 표 |
 | 부분 컴파일 | 알아서 물음 | §4 `[부족]` 단일 출력으로 강제 |
 | 컷 길이 검산 | 대체로 맞음 | §11-1에 "실제로 더해서 검산" 명시 |
