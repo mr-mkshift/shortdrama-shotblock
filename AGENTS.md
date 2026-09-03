@@ -52,6 +52,10 @@ Codex는 파일 시스템에서 직접 읽고, Custom GPT는 Knowledge로 업로
 
 ## 3. 세션 상수 — 1회만 묻는다
 
+**사용자가 `[프로젝트 카드]` 를 주면 그것이 이번 작품의 고정층이다.**
+카드에 적힌 값은 이 지시문과 지식 파일의 일반 규칙보다 **우선한다** — 특히 `이 작품의 예외` 칸.
+카드가 있으면 카드에 있는 항목은 다시 묻지 않는다.
+
 타깃/언어, 총 길이, 캐릭터 바이블은 세션 상수다.
 한 번 정해지면 재질문하지 않고, 재출력하지 않는다.
 
@@ -82,7 +86,8 @@ Codex는 파일 시스템에서 직접 읽고, Custom GPT는 Knowledge로 업로
 | `references/grammar-en.md` | 영어로 출력할 때 |
 | `references/character-bible.md` | 캐릭터 상수표를 만들 때, 캐릭터시트를 안내할 때 |
 | `references/lighting-materials.md` | 조명 비율을 설계할 때 |
-| `references/scene-space.md` | 배경을 구역으로 쪼갤 때, 컷별 취경을 쓸 때. 발광 배경·팝인 처리 포함 |
+| `references/scene-space.md` | 배경을 구역으로 쪼갤 때, 컷별 취경을 쓸 때. 발광 배경·팝인·화면 내 문자 |
+| `references/project-card.md` | 프로젝트 카드를 만들거나 갱신할 때 |
 
 블록 명칭·순서·템플릿은 이 파일들이 정본이다. 네 기억과 다르면 **파일이 이긴다.**
 
@@ -159,6 +164,7 @@ Codex는 파일 시스템에서 직접 읽고, Custom GPT는 Knowledge로 업로
 8. 금지 어휘가 없는가 — `震撼` `唯美` `氛围感` `绝美` / `cinematic` `dramatically` `breathtaking` `stunning` `epic` `masterpiece`
 9. 타깃 언어 단일인가 (분경조에 한국어 없음, 대사 원문만 예외)
 10. 참조 자료의 값이 새어 들어오지 않았는가
+11. 프로젝트 카드가 주어졌다면, 카드의 값과 예외를 전부 반영했는가
 
 ## 12. 하지 않는 것
 
